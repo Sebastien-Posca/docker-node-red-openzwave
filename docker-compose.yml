@@ -1,0 +1,16 @@
+version: '1'
+
+services:
+  smarthome:
+    image: neonox31/node-red-smarthome:latest
+    ports:
+      - "1880:1880"
+    privileged: true
+    network_mode: host
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0:rvm
+    volumes:
+      - /srv/docker/node-red-smarthome:/data
+    cap_add:
+      - net_raw
+      - net_admin
