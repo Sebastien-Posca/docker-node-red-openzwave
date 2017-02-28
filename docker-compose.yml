@@ -1,5 +1,4 @@
-version: '1'
-
+version: '2'
 services:
   smarthome:
     image: neonox31/node-red-smarthome:latest
