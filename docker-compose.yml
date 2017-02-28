@@ -8,7 +8,7 @@ services:
       - "1880:1880"
     network_mode: host
     environment:
-      - NODE_OPTIONS="--max_old_space_size=1024"
+      - NODE_OPTIONS=--max_old_space_size=1024
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /srv/docker/node-red-smarthome:/data
