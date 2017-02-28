@@ -17,4 +17,3 @@ services:
     cap_add:
       - net_raw
       - net_admin
-
