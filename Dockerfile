@@ -32,6 +32,7 @@ RUN npm i git+https://github.com/Neonox31/node-red-contrib-amazondash.git
 RUN npm i git+https://github.com/Neonox31/node-red-web-nodes.git
 RUN npm i node-red-node-pushover
 RUN npm i node-red-contrib-date
+RUN npm i node-red-contrib-cron
 
 
 # --------------------------------
