@@ -16,7 +16,7 @@ ENV LD_LIBRARY_PATH /usr/local/lib64
 RUN ldconfig /usr/local/lib64
 
 # Add openzwave nodes
-RUN npm i node-red-contrib-openzwave
+RUN npm i -S node-red-contrib-openzwave
 
 
 # ---- AMAZON DASH BUTTONS ----
@@ -25,14 +25,14 @@ RUN npm i node-red-contrib-openzwave
 RUN apt-get -y install libpcap-dev
 
 # Add amazondash node
-RUN npm i git+https://github.com/Neonox31/node-red-contrib-amazondash.git
+RUN npm i -S git+https://github.com/Neonox31/node-red-contrib-amazondash.git
 
 
 # ---- ADD CUSTOM NODES ----
-RUN npm i git+https://github.com/Neonox31/node-red-web-nodes.git
-RUN npm i node-red-node-pushover
-RUN npm i node-red-contrib-date
-RUN npm i node-red-contrib-cron
+RUN npm i -S git+https://github.com/Neonox31/node-red-web-nodes.git
+RUN npm i -S node-red-node-pushover
+RUN npm i -S node-red-contrib-date
+RUN npm i -S node-red-contrib-cron
 
 
 # --------------------------------
