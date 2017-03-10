@@ -14,6 +14,3 @@ services:
       - /srv/docker/node-red-smarthome:/data
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0:rvm
-    cap_add:
-      - net_raw
-      - net_admin
