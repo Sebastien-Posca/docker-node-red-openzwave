@@ -26,6 +26,8 @@ RUN apt-get -y install libpcap-dev
 
 # Add amazondash node
 RUN npm i -S git+https://github.com/Neonox31/node-red-contrib-amazondash.git
+# Override node pcap library due to segfault on close session
+RUN npm i -S 'git+https://github.com/lo1tuma/node_pcap.git#seg-fault-on-close'
 
 
 # ---- ADD CUSTOM NODES ----
