@@ -24,8 +24,8 @@ RUN npm i -S node-red-contrib-openzwave
 # Install libpcap for node-pcap
 RUN apt-get -y install libpcap-dev
 
-# Add amazondash node
-RUN npm i -S git+https://github.com/Neonox31/node-red-contrib-amazondash.git
+# Add custom amazondash node
+RUN npm i -S "git+https://github.com/Neonox31/node-red-contrib-amazondash.git#improvements"
 
 
 # ---- ADD CUSTOM NODES ----
