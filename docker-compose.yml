@@ -14,3 +14,4 @@ services:
       - /srv/docker/node-red-smarthome:/data
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0:rvm
+      - /dev/ttyACM0:/dev/ttyACM0:rvm
