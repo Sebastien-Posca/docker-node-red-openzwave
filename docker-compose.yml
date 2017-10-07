@@ -6,7 +6,8 @@ services:
     restart: always
     ports:
       - "1880:1880"
-    network_mode: host
+    networks:
+      - weberhome_lan
     environment:
       - NODE_OPTIONS=--max_old_space_size=1024
     volumes:
@@ -14,3 +15,8 @@ services:
       - /srv/docker/node-red-smarthome:/data
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0:rvm
+    labels:
+      - "traefik.enable=true"
+      - "traefik.backend=smarthome"
+      - "traefik.port=1880"
+      - "traefik.frontend.rule=Host:node-red.weberhome.lan, node-red"
