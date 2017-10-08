@@ -1,4 +1,7 @@
 version: '2'
+networks:
+  weberhome_lan:
+    external: true
 services:
   smarthome:
     image: neonox31/node-red-smarthome:latest
