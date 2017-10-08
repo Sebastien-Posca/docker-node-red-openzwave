@@ -5,6 +5,7 @@ networks:
 services:
   smarthome:
     image: neonox31/node-red-smarthome:latest
+    container_name: smarthome
     privileged: true
     restart: always
     ports:
