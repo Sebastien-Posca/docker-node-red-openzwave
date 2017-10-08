@@ -22,7 +22,6 @@ RUN npm i -S node-red-contrib-openzwave
 RUN npm i -S git+https://github.com/Neonox31/node-red-web-nodes.git
 RUN npm i -S node-red-node-pushover
 RUN npm i -S node-red-contrib-date
-RUN npm i -S node-red-contrib-cron
 RUN npm i -S node-red-contrib-google-home-notify
 
 # --------------------------------
