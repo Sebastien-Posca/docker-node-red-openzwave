@@ -23,6 +23,7 @@ RUN npm i -S git+https://github.com/Neonox31/node-red-web-nodes.git
 RUN npm i -S node-red-node-pushover
 RUN npm i -S node-red-contrib-date
 RUN npm i -S node-red-contrib-google-home-notify
+RUN npm i -S node-red-contrib-broadlink
 
 # --------------------------------
 
